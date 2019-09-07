@@ -50,10 +50,7 @@
         </form>
     </div>
     
-    <div class="search-div">
-        <button mat-raised-button>
-            <mat-icon>search</mat-icon>
-        </button>
+    <div class="search-div">       
         <mat-form-field class="search-form-field" floatLabel="never">
             <input matInput [(ngModel)]="searchKey" placeholder="Search" autocomplete="off" (keyup)="applyFilter()">
             <button mat-button matSuffix mat-icon-button aria-label="Clear" *ngIf="searchKey" (click)="onSearchClear()">

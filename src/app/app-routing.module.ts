@@ -9,11 +9,12 @@ import { AddUserComponent } from './customComponents/add-user/add-user.component
 
 const routes: Routes = [
   // add routing details here..
-  { path: 'add-project', component:AddProjectComponent},
-  { path: 'add-task',component:AddTaskComponent},
-  { path:'add-user', component:AddUserComponent},
-  {path: 'view-task', component:ViewTaskComponent},
-  { path: '', redirectTo: '/add-user', pathMatch: 'full'}
+  { path: 'add-project', component: AddProjectComponent },
+  { path: 'add-task', component: AddTaskComponent },
+  { path: 'add-user', component: AddUserComponent },
+  { path: 'editTask/:id', component: AddTaskComponent },
+  { path: 'view-task', component: ViewTaskComponent },
+  { path: '', redirectTo: '/add-user', pathMatch: 'full' }
 ];
 
 @NgModule({
